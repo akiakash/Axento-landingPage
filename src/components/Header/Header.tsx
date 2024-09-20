@@ -3,29 +3,35 @@ import logo from "../../Assets/Logo/logo.png";
 import Image from "next/image";
 import { navLinks } from "@/constants/constants";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter(); // Hook for getting current route
 
   const toggleMenu = () => {
-    setIsOpen((prevIsOpen) => !prevIsOpen); // Toggle the state correctly
+    setIsOpen((prevIsOpen) => !prevIsOpen);
     console.log("clicked", isOpen);
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center ">
       {/* Desktop Header */}
-      <header className="w-full md:fixed md:flex hidden bg-transparent flex items-center justify-between py-4 px-8">
+      <header className="w-full md:fixed md:flex hidden bg-transparent flex items-center justify-between py-4 px-8 z-[99]">
         <div className="flex items-center">
           <Image src={logo} width={200} height={80} alt="Logo" />
         </div>
 
-        <nav className="flex items-center space-x-8">
+        <nav className="flex items-center space-x-8 ">
           {navLinks.map((link, index) => (
             <Link
               key={index}
               href={link.href}
-              className="font-semibold leading-[30.6px] text-[#A5A5A5]"
+              className={`font-semibold leading-[30.6px]  z-50   cursor-pointer ${
+                router.pathname === link.href
+                  ? "text-[#B880FC]" // Active link color
+                  : "text-[#A5A5A5]" // Default color
+              } hover:text-[#603EE4] transition-colors duration-300  cursor-pointer`} // Hover color
             >
               {link.name}
             </Link>
@@ -54,7 +60,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 backdrop-filter backdrop-blur-md transition-all duration-500  transform z-50 ${
+        className={` md:hidden fixed md: top-0 left-0 w-full h-full  bg-opacity-70 backdrop-filter backdrop-blur-md transition-all duration-500  transform z-50 ${
           isOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -75,7 +81,11 @@ const Header: React.FC = () => {
             <Link
               key={index}
               href={link.href}
-              className="font-bold text-white text-[24px]"
+              className={`font-bold text-white text-[24px] ${
+                router.pathname === link.href
+                  ? "text-[#B880FC]" // Active link color for mobile
+                  : "text-white"
+              } hover:text-[#603EE4] transition-colors duration-300`}
               onClick={toggleMenu}
             >
               {link.name}
