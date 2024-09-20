@@ -8,7 +8,7 @@ import Link from "next/link";
 const Header: React.FC = () => {
   return (
     <div className="flex justify-center">
-      <header className="w-full fixed bg-transparent flex items-center justify-between py-4 px-8  px-[80px]">
+      <header className="w-full fixed bg-transparent flex items-center justify-between py-4 px-8 ">
         <div className="flex items-center">
           <Image src={logo} width={200} height={80} alt="Logo" />
         </div>
