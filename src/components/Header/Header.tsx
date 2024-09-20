@@ -60,7 +60,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       <div
-        className={` md:hidden fixed md: top-0 left-0 w-full h-full  bg-opacity-70 backdrop-filter backdrop-blur-md transition-all duration-500  transform z-50 ${
+        className={` md:hidden fixed md: top-0 left-0 w-full h-full  bg-opacity-70 backdrop-filter backdrop-blur-lg transition-all duration-500  transform z-50 ${
           isOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -85,7 +85,7 @@ const Header: React.FC = () => {
                 router.pathname === link.href
                   ? "text-[#B880FC]" // Active link color for mobile
                   : "text-white"
-              } hover:text-[#603EE4] transition-colors duration-300`}
+              } hover:text-[#B880FC] transition-colors duration-300`}
               onClick={toggleMenu}
             >
               {link.name}
