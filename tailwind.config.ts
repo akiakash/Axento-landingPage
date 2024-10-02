@@ -14,6 +14,13 @@ const config: Config = {
       },
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"],
+        zapier: ['Archivo Black', 'sans-serif'],
+        gumroad: ['Raleway', 'sans-serif'],
+        featherdev: ['Poppins', 'sans-serif'],
+        figma: ['Inter', 'sans-serif'],
+        coinbase: ['DM Sans', 'sans-serif'],
+        globalbank: ['Montserrat', 'sans-serif'],
+        amplitude: ['Urbanist', 'sans-serif'],
       },
     },
   },
