@@ -1,17 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import Zapier from "../../Assets/images/Zapier.png";
-import Gumroad from "../../Assets/images/Gumroad.png";
-import Figma from "../../Assets/images/Figma.png";
-import FeatherDev from "../../Assets/images/FeatherDev.png";
-import coinbase from "../../Assets/images/coinbase.png";
-import GlobalBank from "../../Assets/images/GlobalBank.png";
-import Amplitude from "../../Assets/images/Amplitude.png";
+import Zapier from "../../Assets/Logo/Zapier.png";
+import Gumroad from "../../Assets/Logo/Gumroad.png";
+import Figma from "../../Assets/Logo/Figma.png";
+import FeatherDev from "../../Assets/Logo/FeatherDev.png";
+import coinbase from "../../Assets/Logo/coinbase.png";
+import GlobalBank from "../../Assets/Logo/GlobalBank.png";
+import Amplitude from "../../Assets/Logo/Amplitude.png";
 
 const Company = () => {
   return (
     <div>
-      <div className="container mx-auto text-center py-10">
+      <div className="container mx-auto text-center py-2">
         <h1 className="text-4xl font-medium">
           <span className="text-[#C18EFF]">10,000</span>
           <span className="text-white"> companies and </span>
