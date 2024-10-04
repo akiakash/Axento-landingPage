@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Zapier from "../../Assets/Logo/Zapier.png";
-import Gumroad from "../../Assets/Logo/Gumroad.png";
-import Figma from "../../Assets/Logo/Figma.png";
-import FeatherDev from "../../Assets/Logo/FeatherDev.png";
-import coinbase from "../../Assets/Logo/coinbase.png";
-import GlobalBank from "../../Assets/Logo/GlobalBank.png";
-import Amplitude from "../../Assets/Logo/Amplitude.png";
+import Zapier from "../../Assets/Logo/Zapier.svg";
+import Gumroad from "../../Assets/Logo/Gumroad.svg";
+import Figma from "../../Assets/Logo/Figma.svg";
+import FeatherDev from "../../Assets/Logo/FeatherDev.svg";
+import coinbase from "../../Assets/Logo/Coinbase.svg";
+import GlobalBank from "../../Assets/Logo/GlobalBank.svg";
+import Amplitude from "../../Assets/Logo/Amlitude.svg";
 
 const Company = () => {
   return (

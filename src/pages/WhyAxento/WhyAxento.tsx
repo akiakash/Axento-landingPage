@@ -83,7 +83,7 @@ const WhyAxento = () => {
       <div className="w-full relative  h-[383px] overflow-hidden text-left text-5xl text-white font-inter mt-3">
       <div className="absolute  top-[calc(50%_-_190.91px)] left-[calc(50%_-_600px)] rounded-2xl w-[600px] h-[400px] overflow-hidden">
         <div className="absolute top-[-40px] left-[-100px] blur-[100px] rounded-full bg-[#b880fc] w-[300px] h-[200px] opacity-[0.6]" />
-        <div className="absolute top-[30px] left-[150px] py-3 px-6 ">
+        <div className="absolute top-[30px] left-[150px]left-[150px] py-3 px-6 ">
             <Image src={Wireframe} alt="Image" />
         </div>
         <div className="absolute top-[100px] left-[150px] py-3 px-6">
@@ -106,7 +106,7 @@ const WhyAxento = () => {
         </div>
       </div>
       <div className="absolute top-[calc(50%_-_191.5px)] left-[calc(50%_+_12px)] rounded-2xl w-[600px] h-[400px] overflow-hidden">
-                <div className="absolute h-[36.76%] top-[40.5%] right-[-90.43px] bottom-[22.73%] blur-[92px] rounded-[216.38px] bg-[#9b59b6] w-[292px] rotate-[-21deg] opacity-[0.6]" />
+            <div className="absolute h-[15.76%] top-[40.5%] right-[-90.43px] bottom-[22.73%] blur-[56px] rounded-[210.38px] bg-[#b880fc] w-[292px] rotate-[-21deg] opacity-[0.6]" />
         <div className="py-3 px-6">
             <Image src={Integration} alt="Image" />
         </div>
