@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="max-w-[1224px] w-full ">
           <div className=" flex xl:flex-row flex-col xl:gap-0 gap-[20px]  w-full ">
-            <div className=" flex-1 text-white w-full">
+            <div className=" flex-1 text-[#fff] w-full">
               <div className="flex flex-col xl:gap-[20px] gap-[12px] xl:items-start items-center">
                 <h1 className="bg-[#19171E] max-w-max py-2 px-3 rounded-full border-[1px] md:text-[16px] text-[12px] border-[#FFFFFF33]">
                   🏆 First AI powered project management tool
@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className=" flex-1 text-white w-full flex flex-row gap-[14px]  justify-center">
+            <div className=" flex-1 text-[#fff] w-full flex flex-row gap-[14px]  justify-center">
               <div className="flex flex-col gap-[10px]">
                 <Image src={HeroImage1} width={216} height={335} alt="Logo" />
                 <Image src={HeroImage3} width={147} height={51} alt="Logo" />

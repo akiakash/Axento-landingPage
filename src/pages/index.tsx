@@ -2,6 +2,8 @@ import Hero from "./Hero/Hero";
 import Company from "./Campany/Company";
 import WhyAxento from "./WhyAxento/WhyAxento";
 import Overview from "./Overview/Overview";
+import FeatureOverviewPanel from "./FeatureOverviewPanel/FeatureOverviewPanel";
+import PricingPlan from "./PricingPlan/PricingPlan";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <Company/>
       <WhyAxento/>
       <Overview/>
+      <FeatureOverviewPanel/>
+      <PricingPlan/>
     </div>
 
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../Assets/Logo/logo.png";
 import Image from "next/image";
 import { navLinks } from "@/constants/constants";
@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Header: React.FC = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter(); // Hook for getting current route
 
@@ -14,10 +15,25 @@ const Header: React.FC = () => {
     console.log("clicked", isOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 50); 
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
   return (
-    <div className="flex justify-center ">
-      {/* Desktop Header */}
-      <header className="w-full md:fixed md:flex hidden bg-transparent flex items-center justify-between py-4 px-8 z-[99]">
+    <div className="flex justify-center">
+      <header
+        className={`w-full md:fixed md:flex hidden items-center justify-between py-0 px-8 z-[99] transition-colors duration-300 ${
+          isScrolled ? "bg-[#161519]" : "bg-transparent"
+        }`}
+      >
         <div className="flex items-center">
           <Image src={logo} width={200} height={80} alt="Logo" />
         </div>
@@ -69,7 +85,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center px-4 py-4">
           <Image src={logo} width={160} height={80} alt="Logo" />
           <button
-            className="text-white text-4xl font-thin"
+            className="text-[#fff] text-4xl font-thin"
             onClick={toggleMenu}
           >
             &times;
@@ -81,10 +97,10 @@ const Header: React.FC = () => {
             <Link
               key={index}
               href={link.href}
-              className={`font-bold text-white text-[24px] ${
+              className={`font-bold text-[#fff] text-[24px] ${
                 router.pathname === link.href
                   ? "text-[#B880FC]" // Active link color for mobile
-                  : "text-white"
+                  : "text-[#fff]"
               } hover:text-[#B880FC] transition-colors duration-300`}
               onClick={toggleMenu}
             >

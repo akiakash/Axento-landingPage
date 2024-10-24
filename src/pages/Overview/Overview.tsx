@@ -7,9 +7,9 @@ import Quantifying from "../../Assets/images/Quantifying.svg";
 
 const Overview = () => {
   return (
-    <div className="flex justify-center mt-32">
-      <div className="absolute w-[1200px] flex justify-between">
-        <div className="w-[24%] h-[282.2px] bg-opacity-10 rounded-2xl relative flex flex-col items-center justify-center">
+    <div className="w-full flex justify-center mt-28">
+      <div className="w-[1200px] flex justify-between">
+        <div className="w-[24%] h-[282.2px] rounded-2xl relative flex flex-col items-center justify-center">
           <Image
             className="absolute top-[30px] w-[90px] h-[90px] object-cover"
             src={Worldwide}
