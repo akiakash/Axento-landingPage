@@ -4,6 +4,8 @@ import WhyAxento from "./WhyAxento/WhyAxento";
 import Overview from "./Overview/Overview";
 import FeatureOverviewPanel from "./FeatureOverviewPanel/FeatureOverviewPanel";
 import PricingPlan from "./PricingPlan/PricingPlan";
+import ClientReviews from "./ClientReviews/ClientReviews";
+import FAQComponent from "./FAQComponent/FAQComponent";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Overview/>
       <FeatureOverviewPanel/>
       <PricingPlan/>
+      <ClientReviews/>
+      <FAQComponent/>
     </div>
 
   );
