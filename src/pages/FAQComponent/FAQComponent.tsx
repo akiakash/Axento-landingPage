@@ -86,7 +86,7 @@ const FAQComponent = () => {
             </div>
 
             {openIndex === index && (
-              <div className="border-[#19171E] border-[1px] border-solid box-border p-4 rounded-b-2xl text-[16px] leading-[27.2px] text-gray-300">
+              <div className="border-[#19171E] border-[1px] border-solid box-border p-4 rounded-b-2xl text-[16px] leading-[27.2px] text-[#fff]">
                 <p>{item.answer}</p>
               </div>
             )}

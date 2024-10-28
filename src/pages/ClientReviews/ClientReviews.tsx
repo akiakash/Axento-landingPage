@@ -10,7 +10,7 @@ import Scroll1 from "../../Assets/svg/Button - Scroll to page 1.svg";
 import Scroll2 from "../../Assets/svg/Button - Scroll to page 2.svg";
 import Scroll3 from "../../Assets/svg/Button - Scroll to page 3.svg";
 
-const Container = () => {
+const ClientReviews = () => {
   return (
     <div className="relative w-full h-[774.6px] overflow-hidden text-white font-inter">
       <div className="w-full flex flex-col justify-center items-center text-[#fff] mt-32">
@@ -133,4 +133,4 @@ const Container = () => {
   );
 };
 
-export default Container;
+export default ClientReviews;

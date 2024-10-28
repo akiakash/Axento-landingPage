@@ -6,6 +6,8 @@ import FeatureOverviewPanel from "./FeatureOverviewPanel/FeatureOverviewPanel";
 import PricingPlan from "./PricingPlan/PricingPlan";
 import ClientReviews from "./ClientReviews/ClientReviews";
 import FAQComponent from "./FAQComponent/FAQComponent";
+import Footer from "../components/Footer/Footer";
+
 
 export default function Home() {
   return (
@@ -18,7 +20,9 @@ export default function Home() {
       <PricingPlan/>
       <ClientReviews/>
       <FAQComponent/>
+      <Footer/>
     </div>
 
   );
 }
+
