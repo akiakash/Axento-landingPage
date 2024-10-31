@@ -1,14 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Client3 from "../../Assets/images/client3.png";
-import Client32 from "../../Assets/images/Client3.2.png";
 import Donald from "../../Assets/images/Donald.png";
 import Inaya from "../../Assets/images/Inaya.png";
 import Inaya2 from "../../Assets/images/Inaya2.png";
 import ReadMore from "../../Assets/svg/readMore.svg";
-import Scroll1 from "../../Assets/svg/Button - Scroll to page 1.svg";
-import Scroll2 from "../../Assets/svg/Button - Scroll to page 2.svg";
-import Scroll3 from "../../Assets/svg/Button - Scroll to page 3.svg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -118,7 +114,7 @@ const ClientReviews = () => {
             </div>
             <div className="w-2/3 h-full flex flex-col justify-center">
               <p className="text-gray-400 mb-4 text-left">
-                B When potential customers are researching you online, they're
+                B When potential customers are researching you online, they&apos;re
                 getting to know you through the content on your website.
               </p>
               <div className="flex items-center space-x-4 pt-6">

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../../Assets/Logo/logo.png";
 import HeroImage1 from "../../Assets/images/heroImage1.png";
-import HeroImage2 from "../../Assets/images/heroImage2.png";
 import Gabriel from "../../Assets/images/Gabriel.png";
 import CreateVector from "../../Assets/svg/CreateVector.svg";
 import DesignVector from "../../Assets/svg/DesignVector.svg";
@@ -19,7 +18,8 @@ import Linkedin from "../../Assets/Logo/Linkedin.svg";
 
 export default function Footer() {
   return (
-    <div className="bg-[#19171E] text-[#fff] font-sans flex flex-col items-center justify-center py-10 mt-32">
+    <div className="bg-[#19171E] text-[#fff] font-sans flex flex-col items-center justify-center py-10 relative mt-16">
+      <div className="absolute top-0 w-full bg-[#0E0C12] h-72 border-b-4 border-[#B880FC]"></div>
       <section className="w-full max-w-[1200px] mx-auto relative rounded-3xl h-[445px] bg-[#0E0C12] shadow-xl flex flex-col lg:flex-row items-center gap-10 mb-16 overflow-hidden border-[1px] border-[#FFFFFF33]">
         <div className="absolute top-0 right-0 blur-[100px] rounded-full bg-[#b880fc] w-[500px] h-[320px] opacity-[0.6]"></div>
 
@@ -102,47 +102,32 @@ export default function Footer() {
         </div>
       </section>
 
-      <footer className="w-full max-w-5xl flex flex-col md:flex-row justify-between text-gray-300 text-sm pt-8">
-        <div className="space-y-4 mb-8 md:mb-0">
-        <div className="flex items-center">
-          <Image src={logo} width={200} height={80} alt="Logo" />
-        </div>
-          <p>Sign up for a free trial today and 
-          experience the difference.</p>
+      <footer className="w-full max-w-[1200px] flex flex-col md:flex-row justify-between text-sm pt-8">
+        <div className="right-[10px]">
+          <div className="w-full ">
+            <Image src={logo} alt="Logo" />
+          </div>
+          <p>Sign up for a free trial today and experience the difference.</p>
           <div className="flex space-x-4">
             <Link href="https://facebook.com">
-              <Image
-                src={Facebook} alt="Logo"
-                width={14}
-                height={14}
-              />
+              <Image src={Facebook} alt="Logo" width={14} height={14} />
             </Link>
             <Link href="https://twitter.com">
-              <Image
-                src={Twitter} alt="Logo"
-                width={14}
-                height={14}
-              />
+              <Image src={Twitter} alt="Logo" width={14} height={14} />
             </Link>
             <Link href="https://instagram.com">
-              <Image
-                src={Instagram} alt="Logo"
-                width={14}
-                height={14}
-              />
+              <Image src={Instagram} alt="Logo" width={14} height={14} />
             </Link>
             <Link href="https://linkedin.com">
-              <Image
-                src={Linkedin} alt="Logo"
-                width={14}
-                height={14}
-              />
+              <Image src={Linkedin} alt="Logo" width={14} height={14} />
             </Link>
           </div>
         </div>
         <div className="grid grid-cols-3 gap-10">
           <div>
-            <h3 className="text-[16px] leading-[27.2px] font-urbanist text-[#B880FC]">Features</h3>
+            <h3 className="text-[16px] leading-[27.2px] font-urbanist text-[#B880FC]">
+              Features
+            </h3>
             <ul className="space-y-3 text-[#FCFDF2] mt-7">
               <li>Project Management</li>
               <li>Gamification</li>
@@ -162,7 +147,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-[16px] leading-[27.2px] font-urbanist text-[#B880FC]">Resources</h3>
+            <h3 className="text-[16px] leading-[27.2px] font-urbanist text-[#B880FC]">
+              Resources
+            </h3>
             <ul className="space-y-3 text-[#FCFDF2] mt-7">
               <li>Brand Guideline</li>
               <li>Newsroom</li>

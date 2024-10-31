@@ -45,7 +45,7 @@ const FAQComponent = () => {
   };
 
   return (
-    <div className="max-w-[1200px] mx-auto relative h-auto text-left text-xl text-[#fff] font-urbanist mt-32">
+    <div className="max-w-[1200px] mx-auto relative h-full min-h-[450px] text-left text-xl text-[#fff] font-urbanist mt-32">
       <div className="flex flex-col w-[40%] right-[60%] left-[4%]">
         <div className="bg-[#19171E] py-2 px-5 w-[270px] rounded-full border-[1px] border-[#FFFFFF33] mb-6">
           <h1 className="text-[16px] font-inter text-ivory">
@@ -68,7 +68,7 @@ const FAQComponent = () => {
         </p>
       </div>
 
-      <div className="absolute w-[calc(100%_-_599.8px)] top-0 left-[600.2px] ">
+      <div className="absolute w-[calc(100%_-_599.8px)] top-0 left-[600.2px]">
         {faqData.map((item: FAQItem, index: number) => (
           <div key={index} className="mb-4">
             <div

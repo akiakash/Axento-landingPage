@@ -36,7 +36,7 @@ const PricingPlan = () => {
         </div>
 
         <div className="text-[48px] leading-[67.2px] font-medium">
-          Innovator's Choice Packages
+          Innovator&apos;s Choice Packages
         </div>
 
         <div className="w-full flex justify-center mt-8">

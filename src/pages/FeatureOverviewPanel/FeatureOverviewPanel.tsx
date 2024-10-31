@@ -57,7 +57,7 @@ const FeatureOverviewPanel = () => {
         </div>
 
         <div className="absolute w-[calc(100%_-_658.5px)] top-[185.07px] left-[622px] text-[16px] leading-[27.2px] flex items-center h-[99px] opacity-80">
-          Streamline your project management with Axento AI's powerful task
+          Streamline your project management with Axento AI&apos;s powerful task
           creation and organization features. Designed to optimize efficiency
           and enhance team collaboration, Axento AI empowers you to stay ahead
           of your project timelines effortlessly.
@@ -225,7 +225,7 @@ const FeatureOverviewPanel = () => {
         Points and Badges
           </div>
           <div className="text-[14px] leading-[25.2px] text-[#d5d4d6] flex items-center">
-            Celebrate your team's hard work and recognize individual
+            Celebrate your team&apos;s hard work and recognize individual
             contributions with a gamified reward system.
           </div>
         </div>

@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         <div className="absolute top-0 right-0">
           <Image src={HeroVector} width={216} height={335} alt="Logo" />
         </div>
-        <div className="max-w-[1224px] w-full ">
+        <div className="max-w-[1200px] w-full ">
           <div className=" flex xl:flex-row flex-col xl:gap-0 gap-[20px]  w-full ">
             <div className=" flex-1 text-[#fff] w-full">
               <div className="flex flex-col xl:gap-[20px] gap-[12px] xl:items-start items-center">
